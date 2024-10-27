@@ -1,0 +1,5 @@
+# Programa caguengue que hice para programar FastAPI.
+# Crea usuarios recibiendo su nombre y edad.
+POST /users/ 		: Permite agregar un usuario.
+GET /users/  		: Retorna los usuarios guardados.
+GET /users/{user_name}  : Retorna la información de un usuario encontrado por su nombre. Si no lo encuentra, retorna "Not Found"
