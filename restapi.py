@@ -5,7 +5,11 @@ from pydantic import BaseModel
 app = FastAPI()  # Instancia
 
 origins = [
-    "https://twosich-fastapi-exa-26.deno.dev/"
+    "https://twosich-fastapi-exa-26.deno.dev/",
+    "https://twosich-fastapi-exa-26-pfgt63753rjb.deno.dev/",
+    "https://twosich-fastapi-exa-26.deno.dev/",
+    "https://127.0.0.1:80/",
+    "https://127.0.0.1/",
 ]
 
 app.add_middleware(
