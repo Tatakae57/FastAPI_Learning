@@ -4,6 +4,17 @@ from pydantic import BaseModel
 # Estructuras de datos
 app = FastAPI()  # Instancia
 
+origins = [
+    "https://twosich-fastapi-exa-26.deno.dev/"
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=[""],
+    allow_headers=[""],
+)
 
 class Usuario(BaseModel):  # Clase usuario
     name: str
